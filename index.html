@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburgue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css" media="all">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+
+<body>
+    <header>
+        <h1>Menu Hamburgue</h1>
+        <span id="span" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itensMenu">
+            <ul>
+                <li><a href="*">Menu1</a></li>
+                <li><a href="*">Menu2</a></li>
+                <li><a href="*">Menu3</a></li>
+                <li><a href="*">Menu4</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <section>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, praesentium. Nulla minima eius
+                nesciunt beatae debitis, veritatis dolorem, neque temporibus modi porro aliquid placeat. Fugit laborum
+                repellendus earum officiis labore!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, optio. Corrupti illum expedita
+                repudiandae consequatur nulla voluptas voluptatibus inventore eaque quas enim hic, aut debitis porro,
+                qui officiis itaque modi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero qui mollitia architecto aut fugiat
+                laudantium nobis? Nostrum recusandae libero, praesentium eos inventore doloremque labore animi tenetur?
+                Autem id illum laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum doloribus sunt voluptate cumque illo
+                doloremque, eius dolorem debitis pariatur officiis? Id perferendis minus odio et. Quam, facere. Quo,
+                magnam quam!
+            </p>
+
+        </section>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none'
+            }else{
+                itensMenu.style.display = 'block'
+            }
+         }
+    </script>
+</body>
+<footer>
+    <p>
+        Criado por Blade CA120 - Todos os direitos reservados
+    </p>
+</footer>
+
+</html>
