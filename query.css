@@ -9,11 +9,11 @@ TV:         acima de 1200px.
 
 
 
-    @media screen and (min-width: 600px) { /** Tablet */
+    @media screen and (max-width: 600px) {
         header>menu{
             text-align: center;
             background-color: rgba(29, 28, 28, 0.884);
-            display: block;
+            display: none;
          }
     
          header, main, footer{
@@ -27,7 +27,7 @@ TV:         acima de 1200px.
             text-align: center;
             color: white;
             text-shadow: 2px 2px 3px black;
-            display: none;
+            display: block;
         }
     
         header>h1{
@@ -37,11 +37,11 @@ TV:         acima de 1200px.
 
 
 
-@media screen and (min-width: 768px) { /** Computador */
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header>menu>{
         text-align: center;
         background-color: rgba(29, 28, 28, 0.884);
-        display: block;
+        display: none;
      }
 
      header, main, footer{
@@ -55,7 +55,7 @@ TV:         acima de 1200px.
         text-align: center;
         color: white;
         text-shadow: 2px 2px 3px black;
-        display: none;
+        display: block;
     }
 
     header>h1{
@@ -63,7 +63,7 @@ TV:         acima de 1200px.
     }
 }
 
-@media screen and (min-width: 992px) { /** Televisão */
+@media screen and (min-width: 992px) and (max-width: 1200px) { /** Televisão */
     header>menu{
         text-align: center;
         background-color: rgba(29, 28, 28, 0.884);
