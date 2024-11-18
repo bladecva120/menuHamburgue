@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 
-<body>
+<body onresize="mudar()">
     <header>
         <h1>Menu Hamburgue</h1>
         <span id="span" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -53,6 +53,14 @@
     </main>
 
     <script>
+        function mudar(){
+            if (window.innerWidth >= 768){
+                itensMenu.style.display = 'block'
+            }else{
+                itensMenu.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itensMenu.style.display == 'block'){
                 itensMenu.style.display = 'none'

@@ -50,11 +50,11 @@ menu>ul>li>a{
     display: block;
     text-decoration: none;
     letter-spacing: 1.5px;
-    background-color: darkgray;
+    background-color: rgb(144, 143, 143);
     padding: 8px;
     color: white;
     border: 1px solid black;
-    box-shadow: 1px 1px gray inset;
+    box-shadow: 1px 1px rgb(0, 0, 0) inset;
     text-shadow: 1px 1px 2px black;
 }
 
