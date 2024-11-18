@@ -6,12 +6,12 @@
 }
 
 html,body{
-    width: 100vw;
-    height: 100vh;
+    background-color: lightgray;
 }
 
 body>header{
     margin-top: 20px;
+    background-color: darkgray;
 }
 header,main{
     width: 90vw;
@@ -19,9 +19,7 @@ header,main{
 }
 
 header>h1,#span{
-    background-color: darkgray;
-    padding: 30px;
-    padding-bottom: 10px;
+    padding: 10px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 3px black;
@@ -35,39 +33,46 @@ header>#span:hover{
 header>h1{
     font-size: 2.4em;
 }
+section>h2{
+    text-align: center;
+    font-size: 1.2em;
+}
 
 header>menu{
-   text-align: center;
-   background-color: rgba(29, 28, 28, 0.884);
    display: none;
 }
-menu>ul>li,a{
-    list-style: none;
-    color: white;
+
+menu>ul{
+    list-style-type: none;
+}
+menu>ul>li>a{
+    text-align: center;
+    display: block;
     text-decoration: none;
-}
-
-menu>ul>li{
-    padding: 7px;
-    border: 1px solid gray;
     letter-spacing: 1.5px;
+    background-color: darkgray;
+    padding: 8px;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px gray inset;
+    text-shadow: 1px 1px 2px black;
 }
 
-menu>ul>li:hover{
-    background-color: rgb(123, 144, 115);
-    color: black;
-    text-shadow: 2px 2px 3px black;
+menu>ul>li>a:hover{
+    text-shadow: 1px 1px 2px black;
+    background-color: rgb(152, 185, 174);
+    color: white;
 }
 
 main>section{
     background-color: rgb(247, 226, 201);
-    padding: 15px;
-    border-top: 1px solid gray;
+    padding-top: 20px;
 }
 
 section>p{
     text-indent: 20px;
     text-align: justify;
+    padding: 10px;
 }
 
 footer{

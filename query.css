@@ -8,38 +8,27 @@ PC:         992px - 1200px;
 TV:         acima de 1200px.
 */
 
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    header>menu{
-        text-align: center;
-        background-color: rgba(29, 28, 28, 0.884);
-        display: block;
-     }
-
-     header, main, footer{
-        width: 80vw;
-     }
-
-     header>#span{
-        background-color: darkgray;
-        padding: 30px;
-        padding-bottom: 10px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px 3px black;
+@media print {
+    header>#span{
         display: none;
     }
-
+    header{
+        margin-bottom: 30px;
+    }
     header>h1{
-        padding-bottom: 30px;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 0.4em;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /** Televisão */
+@media screen and (min-width: 768px) {
     header>menu{
-        text-align: center;
-        background-color: rgba(29, 28, 28, 0.884);
         display: block;
+     }
+
+     menu>ul>li{
+        display:inline-block;
      }
 
      header, main, footer{
@@ -47,42 +36,10 @@ TV:         acima de 1200px.
      }
 
      header>#span{
-        background-color: darkgray;
-        padding: 30px;
-        padding-bottom: 10px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px 3px black;
         display: none;
     }
 
     header>h1{
-        padding-bottom: 30px;
-    }
-}
-
-@media screen and (min-width: 1200px) { /** Televisão */
-    header>menu{
-        text-align: center;
-        background-color: rgba(29, 28, 28, 0.884);
-        display: block;
-     }
-
-     header, main, footer{
-        width: 80vw;
-     }
-
-     header>#span{
-        background-color: darkgray;
-        padding: 30px;
-        padding-bottom: 10px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px 3px black;
-        display: none;
-    }
-
-    header>h1{
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
 }
